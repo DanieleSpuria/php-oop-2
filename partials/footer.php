@@ -1,6 +1,6 @@
 
     <footer>
-      <div class="container texte-center my-5">
+      <div class="container text-center my-5">
         <h6>footer</h6>
       </div>
     </footer>

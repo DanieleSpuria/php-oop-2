@@ -3,14 +3,14 @@
   require_once __DIR__ . '/products.php';
 
   class Bed extends Products {
-    private $type;
+    private $description;
 
-    public function __construct($_image, $_categories, $_brand, $_price, $_type) {
+    public function __construct($_image, $_categories, $_brand, $_price, $_description) {
       parent::__construct($_image, $_categories, $_brand, $_price);
-      $this->type = $_type;
+      $this->description = $_description;
     }
 
-    public function getType() {
-      return $this->type;
+    public function getDescription() {
+      return $this->description;
     }
   }
