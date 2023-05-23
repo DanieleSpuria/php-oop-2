@@ -1,10 +1,8 @@
 <?php
 
-  include __DIR__ . '/models/products.php';
-
-  $cibo = new Products('cibo', 'bello', '7');
-
-  var_dump($cibo);
+  include __DIR__ . '/models/games.php';
+  include __DIR__ . '/models/food.php';
+  include __DIR__ . '/models/bed.php';
 
 ?>
 
