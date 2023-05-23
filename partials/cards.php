@@ -12,9 +12,17 @@
             <span class="card-text d-block">Prezzo: <?php echo $product->getPrice() ?> €</span>
             
             <?php 
-              // if($product->getMaterial()) {
-              //   echo '<span class="card-text d-block">Prezzo:' . $product->getMaterial() . '€</span>';
-              // }
+              if(method_exists($product, 'getMaterial')) {
+                echo '<span class="card-text d-block">Materiali:' . ' ' . $product->getMaterial() . '</span>';
+              }
+
+              if(method_exists($product, 'getIngredients')) {
+                echo '<span class="card-text d-block">Ingredienti:' . ' ' . $product->getIngredients() . '</span>';
+              }
+
+              if(method_exists($product, 'getDescription')) {
+                echo '<span class="card-text d-block">Descrizione:' . ' ' . $product->getDescription() . '</span>';
+              }
             ?>
           </div>
         </div>
