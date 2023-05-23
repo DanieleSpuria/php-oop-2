@@ -1,3 +1,14 @@
+<?php
+
+  include __DIR__ . '/models/products.php';
+
+  $cibo = new Products('cibo', 'bello', '7');
+
+  var_dump($cibo);
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,6 +18,5 @@
   <title>Pet Shop</title>
 </head>
 <body>
-  <h1>haloa!</h1>
 </body>
 </html>
